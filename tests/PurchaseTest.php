@@ -1,6 +1,6 @@
 <?php
 
-namespace SelimSalihovic\PikPay;
+namespace croatiangrn\PikPay;
 
 use SelimSalihovic\PikPay\Requests\PurchaseRequest;
 use SelimSalihovic\PikPay\Responses\PurchaseResponse;

@@ -1,6 +1,6 @@
 <?php
 
-namespace SelimSalihovic\PikPay\Responses;
+namespace croatiangrn\PikPay\Responses;
 
 /**
  * PikPay AuthorizationResponse.

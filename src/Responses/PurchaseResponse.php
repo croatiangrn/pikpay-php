@@ -1,6 +1,6 @@
 <?php
 
-namespace SelimSalihovic\PikPay\Responses;
+namespace croatiangrn\PikPay\Responses;
 use rnd\web\Controller;
 use SimpleXMLElement;
 

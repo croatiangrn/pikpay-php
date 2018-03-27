@@ -1,6 +1,6 @@
 <?php
 
-namespace SelimSalihovic\PikPay;
+namespace croatiangrn\PikPay;
 
 use SelimSalihovic\PikPay\Requests\AuthorizationRequest;
 use SelimSalihovic\PikPay\Requests\VoidRequest;

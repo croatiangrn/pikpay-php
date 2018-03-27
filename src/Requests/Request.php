@@ -1,6 +1,6 @@
 <?php
 
-namespace SelimSalihovic\PikPay\Requests;
+namespace croatiangrn\PikPay\Requests;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Psr7\Request as HttpRequest;

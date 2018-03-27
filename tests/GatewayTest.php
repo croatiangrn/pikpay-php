@@ -1,6 +1,6 @@
 <?php
 
-namespace SelimSalihovic\PikPay;
+namespace croatiangrn\PikPay;
 
 class GatewayTest extends \PHPUnit_Framework_TestCase
 {

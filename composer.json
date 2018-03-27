@@ -1,18 +1,17 @@
 {
-    "name": "selimsalihovic/pikpay-php",
+    "name": "croatiangrn/pikpay-php",
     "type": "library",
     "description": "Payment Processing Library for PikPay",
     "keywords": [
-        "selimsalihovic",
+        "croatiangrn",
         "pikpay-php"
     ],
-    "homepage": "https://github.com/selimsalihovic/pikpay-php",
+    "homepage": "https://github.com/croatiangrn/pikpay-php",
     "license": "MIT",
     "authors": [
         {
-            "name": "Selim Salihovic",
-            "email": "selim.salihovic@gmail.com",
-            "homepage": "http://selimsalihovic.github.io/",
+            "name": "Marko Mikulić",
+            "email": "mikulic.marko996@gmail.com",
             "role": "Developer"
         }
     ],
@@ -27,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SelimSalihovic\\PikPay\\": "src"
+            "croatiangrn\\PikPay\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SelimSalihovic\\PikPay\\": "tests"
+            "croatiangrn\\PikPay\\": "tests"
         }
     },
     "scripts": {
