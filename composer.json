@@ -18,7 +18,8 @@
     ],
     "require": {
         "php": ">=7.0",
-        "guzzlehttp/guzzle": "~6.2"
+        "guzzlehttp/guzzle": "~6.2",
+        "croatiangrn/wp-yii": "@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*",
