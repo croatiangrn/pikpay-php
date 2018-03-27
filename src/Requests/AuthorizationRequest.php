@@ -3,8 +3,8 @@
 namespace croatiangrn\PikPay\Requests;
 
 use GuzzleHttp\Client as HttpClient;
-use SelimSalihovic\PikPay\Gateway;
-use SelimSalihovic\PikPay\Responses\AuthorizationResponse;
+use croatiangrn\PikPay\Gateway;
+use croatiangrn\PikPay\Responses\AuthorizationResponse;
 
 /**
  * PikPay AuthorizationRequest.

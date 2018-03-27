@@ -4,7 +4,7 @@ namespace croatiangrn\PikPay\Requests;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Psr7\Request as HttpRequest;
-use SelimSalihovic\PikPay\Gateway;
+use croatiangrn\PikPay\Gateway;
 
 /**
  * PikPay Request.

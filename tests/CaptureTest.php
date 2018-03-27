@@ -2,9 +2,9 @@
 
 namespace croatiangrn\PikPay;
 
-use SelimSalihovic\PikPay\Requests\AuthorizationRequest;
-use SelimSalihovic\PikPay\Requests\CaptureRequest;
-use SelimSalihovic\PikPay\Responses\CaptureResponse;
+use croatiangrn\PikPay\Requests\AuthorizationRequest;
+use croatiangrn\PikPay\Requests\CaptureRequest;
+use croatiangrn\PikPay\Responses\CaptureResponse;
 
 class CaptureTest extends \PHPUnit_Framework_TestCase
 {

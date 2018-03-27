@@ -2,8 +2,8 @@
 
 namespace croatiangrn\PikPay;
 
-use SelimSalihovic\PikPay\Requests\PurchaseRequest;
-use SelimSalihovic\PikPay\Responses\PurchaseResponse;
+use croatiangrn\PikPay\Requests\PurchaseRequest;
+use croatiangrn\PikPay\Responses\PurchaseResponse;
 
 class PurchaseTest extends \PHPUnit_Framework_TestCase
 {

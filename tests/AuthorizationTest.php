@@ -2,8 +2,8 @@
 
 namespace croatiangrn\PikPay;
 
-use SelimSalihovic\PikPay\Requests\AuthorizationRequest;
-use SelimSalihovic\PikPay\Responses\AuthorizationResponse;
+use croatiangrn\PikPay\Requests\AuthorizationRequest;
+use croatiangrn\PikPay\Responses\AuthorizationResponse;
 
 class AuthorizationTest extends \PHPUnit_Framework_TestCase
 {

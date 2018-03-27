@@ -2,9 +2,9 @@
 
 namespace croatiangrn\PikPay;
 
-use SelimSalihovic\PikPay\Requests\AuthorizationRequest;
-use SelimSalihovic\PikPay\Requests\VoidRequest;
-use SelimSalihovic\PikPay\Responses\VoidResponse;
+use croatiangrn\PikPay\Requests\AuthorizationRequest;
+use croatiangrn\PikPay\Requests\VoidRequest;
+use croatiangrn\PikPay\Responses\VoidResponse;
 
 class VoidTest extends \PHPUnit_Framework_TestCase
 {
