@@ -36,9 +36,29 @@ class PurchaseResponse extends Response
         $pareq = $parsed_xml->pareq;
         $authenticity_token = 'authenticity-token';
         $authenticity_token = $parsed_xml->$authenticity_token;
-
-        $controller = new Controller();
-        echo $controller->renderPartial('../../post_form.php', ['url_key' => $url_key, 'pareq' => $pareq, 'authenticity_token' => $authenticity_token]);
+        $html = <<<HTML
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>3D Secure Verification</title>
+    <script language="Javascript">
+        function OnLoadEvent() { document.form.submit(); }
+    </script>
+</head>
+<body OnLoad="OnLoadEvent();">
+Invoking 3-D secure form, please wait ...
+<form name="form" action="{$url_key}" method="post">
+    <input type="hidden" name="PaReq" value="{$pareq}">
+    <input type="hidden" name="TermUrl" value="term-url">
+    <input type="hidden" name="MD" value="{$authenticity_token}">
+    <noscript>
+        <p>Please click</p><input id="to-asc-button" type="submit">
+    </noscript>
+</form>
+</body>
+</html>
+HTML;
+        echo $html;
     }
 
     public function transactionId()
