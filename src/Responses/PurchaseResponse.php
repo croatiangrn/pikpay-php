@@ -21,6 +21,7 @@ class PurchaseResponse extends Response
 
         if (property_exists($parsed_xml, 'acs-url')) {
             $this->validate3D($parsed_xml);
+            die;
         }
 
         return $this->httpResponse->getStatusCode() == 201;
@@ -36,6 +37,12 @@ class PurchaseResponse extends Response
         $pareq = $parsed_xml->pareq;
         $authenticity_token = 'authenticity-token';
         $authenticity_token = $parsed_xml->$authenticity_token;
+
+        $term_url = '';
+        if (function_exists('get_field')) {
+            $term_url = get_field('validate_3d_page', 'options');
+        }
+
         $html = <<<HTML
         <!DOCTYPE html>
 <html>
@@ -49,7 +56,7 @@ class PurchaseResponse extends Response
 Invoking 3-D secure form, please wait ...
 <form name="form" action="{$url_key}" method="post">
     <input type="hidden" name="PaReq" value="{$pareq}">
-    <input type="hidden" name="TermUrl" value="term-url">
+    <input type="hidden" name="TermUrl" value="{$term_url}">
     <input type="hidden" name="MD" value="{$authenticity_token}">
     <noscript>
         <p>Please click</p><input id="to-asc-button" type="submit">
