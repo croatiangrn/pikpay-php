@@ -13,7 +13,7 @@ use SimpleXMLElement;
  */
 class PurchaseResponse extends Response
 {
-    public function isSuccessfull()
+    public function isSuccessful()
     {
         $xml = $this->httpResponse->getBody()->getContents();
         /** @var SimpleXMLElement $parsed_xml */
